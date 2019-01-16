@@ -2,12 +2,12 @@
 #! /usr/bin/python
 
 """BCAdirecto account Balance Display (default account)"""
-__author__ = "Edson Martins"
-__copyright__ = "Copyright 2016, CaboVerde Free Software"
+__author__ = ""
+__copyright__ = ""
 __license__ = "GPL"
 __version__ = "2.0"
-__maintainer__ = "Edson Martins"
-__email__ = "propiebis@gmail.com"
+__maintainer__ = ""
+__email__ = ""
 __status__ = "Production"
 
 # TODO - Get user account if more than one and work with...
@@ -50,14 +50,13 @@ def check(user, passw):
       res = re.findall(cellStart + '(.+?)' + cellEnd, d)
       
       if res:
-        print "Saldo contabilístico\t: " + res[0]
-        print "Saldo Disponível\t: " + res[1]
+        print ("Saldo contabilistico\t: " + res[0])
+        print ("Saldo Disponivel\t: " + res[1])
 	
-  print ("Good bye!\npropiebis@gmail.com\n")
+  print ("Good bye!")
   exit(0)
 def header():
   print ("checkbca.py -1.0\n\rRead your BCA online account balance")
-  print ("Edson Martins (http://facebook.com/proffi)\n")
 
 #main program
 def main(argv):
